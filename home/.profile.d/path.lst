@@ -1,0 +1,10 @@
+./bin
+./.bin
+./vendor/bin
+./node_modules/.bin
+$HOME/.bin
+$HOME/.lib/bin
+/usr/local/go/bin
+$HOME/Library/Python/2.7/bin
+$HOME/Library/Python/3.6/bin
+$GOPATH/bin

@@ -1,0 +1,13 @@
+[user]
+	name = Mike Carey
+	email = mike-carey@users.noreply.github.com
+[alias]
+	acp = "!f() { [ -n \"${@}\" ] && git add . && git commit -m \"${@}\" && git push ; }; f"
+	st = status
+	c = commit
+	rv = remote -v
+	ci = commit
+	rh = reset --hard
+	p = push
+	co = commit
+	root = rev-parse --show-toplevel

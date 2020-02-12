@@ -1,0 +1,23 @@
+---
+install: https://raw.githubusercontent.com/Homebrew/install/master/install
+apps:
+  - bash-completion
+  - yq
+  - jq
+casks:
+  - homebrew/cask-cask
+  - homebrew/cask-versions
+  - homebrew/cask-drivers
+cask_apps:
+  - diffmerge
+  - docker
+  - firefox
+  - google-chrome
+  - insomnia
+  - iterm2
+  - itsycal
+  - virtualbox
+  - visual-studio-code
+app_store_apps:
+  - 497799835  # XCode
+  - 1462114288 # Grammarly

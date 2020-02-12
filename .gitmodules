@@ -1,0 +1,24 @@
+[submodule "dracula-zsh"]
+	path = lib/dracula-zsh
+	url = https://github.com/dracula/zsh.git
+[submodule "vundle"]
+	path = lib/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "zsh-completions"]
+	path = lib/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
+[submodule "bosh-zsh-autocomplete-plugin"]
+	path = lib/bosh-zsh-autocomplete-plugin
+	url = https://github.com/frodenas/bosh-zsh-autocomplete-plugin.git
+[submodule "fly-zsh-autocomplete-plugin"]
+	path = lib/fly-zsh-autocomplete-plugin
+	url = https://github.com/sbodiu-pivotal/fly-zsh-autocomplete-plugin.git
+[submodule "cf-zsh-autocomplete-plugin"]
+	path = lib/cf-zsh-autocomplete-plugin
+	url = https://github.com/dannyzen/cf-zsh-autocomplete-plugin.git
+[submodule "vim-monokai"]
+	path = lib/vim-monokai
+	url = https://github.com/sickill/vim-monokai.git
+[submodule "homeshick"]
+	path = lib/homeshick
+	url = https://github.com/andsens/homeshick.git
