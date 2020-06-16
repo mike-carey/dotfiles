@@ -70,6 +70,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Run bash_profile
 [ -f $HOME/.bash_profile ] && . $HOME/.bash_profile
-
-# Enable direnv
-hash direnv 2>/dev/null && eval "$(direnv hook zsh)"

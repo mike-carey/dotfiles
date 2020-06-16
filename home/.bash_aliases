@@ -12,6 +12,7 @@ alias tree='tree -C'
 alias untar='tar -xf'
 alias untarz='tar -xzf'
 alias back='cd "$OLDPWD"'
+alias generate-sshkey='ssh-keygen -b 4096 -t rsa -N ""'
 
 ## Overrides ##
 alias tar='tar -v'
