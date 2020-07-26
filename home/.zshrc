@@ -67,6 +67,7 @@ autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+unsetopt HIST_VERIFY
 
 # Run bash_profile
 [ -f $HOME/.bash_profile ] && . $HOME/.bash_profile

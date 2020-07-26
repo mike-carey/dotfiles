@@ -5,6 +5,9 @@
 set nocompatible
 filetype off
 
+" Allow backspace in insert mode
+set backspace=indent,eol,start
+
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()

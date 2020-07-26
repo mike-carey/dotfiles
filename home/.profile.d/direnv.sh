@@ -3,15 +3,11 @@
 ##
 
 if hash direnv 2>/dev/null; then
+  _shell=bash
   case $SHELL in
-    fish )
-      eval (direnv hook fish)
-      ;;
-    tcsh )
-      eval `direnv hook tcsh`
-      ;;
-    * )
-      eval "$(direnv hook $SHELL)"
+    *zsh )
+      _shell=zsh
       ;;
   esac
+  eval "$(direnv hook $_shell)"
 fi

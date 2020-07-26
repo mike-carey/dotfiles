@@ -32,8 +32,12 @@ brew "diffutils"
 brew "openssl@1.1"
 # Library for command-line editing
 brew "readline"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Isolated development environments using Docker
 brew "docker-compose"
+# Load/unload environment variables based on $PWD
+brew "direnv"
 # Classic UNIX line editor
 brew "ed"
 # Simple, fast and user-friendly alternative to find

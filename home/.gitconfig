@@ -4,12 +4,15 @@
 [alias]
 	acp = "!f() { [ -n \"${@}\" ] && msg=\"$1\" && shift && git add . && git commit -m \"${msg}\" ${@} && git push ; }; f"
 	st = status
+	a = add
+	ap = add --patch
 	c = commit
 	ci = commit
-	co = commit
-  cane = commit --amend --no-edit
+	cane = commit --amend --no-edit
+	co = checkout
 	rv = remote -v
 	rh = reset --hard
 	p = push
-  fp = push --force
+	pf = push --force
+	po = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
 	root = rev-parse --show-toplevel
