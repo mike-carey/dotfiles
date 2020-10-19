@@ -25,6 +25,16 @@ alias gpr='git pull -r'
 alias gpo='git po'
 function gcp() { git commit "$@" && git push; }
 alias grh='git reset --hard'
+alias gst='git status'
+alias gci='git commit'
+alias gco='git checkout'
+
+# Terraform
+alias ti='terraform init'
+alias tp='terraform plan'
+alias ta='terraform apply'
+alias td='terraform destroy'
+alias tim='terraform import'
 
 # SSH Helpers
 alias generate-sshkey='ssh-keygen -b 4096 -t rsa -N ""'
