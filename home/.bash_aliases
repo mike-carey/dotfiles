@@ -30,11 +30,14 @@ alias gci='git commit'
 alias gco='git checkout'
 
 # Terraform
+alias tf='terraform'
 alias ti='terraform init'
 alias tp='terraform plan'
 alias ta='terraform apply'
 alias td='terraform destroy'
+alias to='terraform output'
 alias tim='terraform import'
+alias tfmt='terraform fmt'
 
 # SSH Helpers
 alias generate-sshkey='ssh-keygen -b 4096 -t rsa -N ""'
