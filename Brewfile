@@ -48,6 +48,8 @@ brew "findutils"
 brew "gawk"
 # GNU compiler collection
 brew "gcc"
+# Distributed revision control system
+brew "git"
 # Command-line option parsing utility
 brew "gnu-getopt"
 # C code prettifier
