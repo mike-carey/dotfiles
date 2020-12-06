@@ -18,3 +18,5 @@
 	root = rev-parse --show-toplevel
 	cleanup = !git remote prune origin && git branch --merged | grep -v '(master|main|development|dev)' | xargs git branch -d
 	b = branch
+[init]
+	defaultBranch = main
