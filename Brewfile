@@ -18,8 +18,8 @@ brew "automake"
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# TAP-compliant test framework for Bash scripts
-brew "bats"
+# Bash Automated Testing System
+brew "bats-core"
 # Cross platform file encryption utility using blowfish
 brew "bcrypt"
 # GNU binary tools for native development
