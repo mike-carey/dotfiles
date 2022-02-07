@@ -1,4 +1,0 @@
-'atom-text-editor':
-  'alt-cmd-l': 'atom-beautify:beautify-editor'
-  'alt-cmd-b': 'golang:godef'
-
