@@ -1,15 +1,5 @@
 ##
-# General Ignore
-##
-
-# Environment variables
-/.envrc
-
-# Docker Storage
-.docker/
-
-##
-# Common
+# Global Ignore
 ##
 
 *.gz
