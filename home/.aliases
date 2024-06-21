@@ -4,6 +4,17 @@
 # Aliases and functions to handle common operations.
 ##
 
+## Common debian aliases ##
+alias ll='ls -al'
+alias la='ls -a'
+
+alias tree='tree -C'
+
+## Helpers ##
+alias untar='tar -xf'
+alias untarz='tar -xzf'
+alias back='cd "$OLDPWD"'
+
 # Docker
 
 alias dockerun='docker run --rm -it -v $(pwd):/srv -w /srv'
@@ -44,3 +55,16 @@ function tf-plan() {
 
   terraform workspace select "$env" && terraform plan -out="$env".plan "${args[@]}"
 }
+
+# SSH Helpers
+alias generate-sshkey='ssh-keygen -b 4096 -t rsa -N ""'
+alias fingerprint='ssh-keygen -E md5 -lf'
+
+function my-public-key() { (eval cat ${SSH_KEY_PATH:-$HOME/.ssh/id_rsa}.pub | pbcopy) && echo "Your public key has been added to your clipboard"; }
+function my-private-key() { (eval cat ${SSH_KEY_PATH:-$HOME/.ssh/id_rsa} | pbcopy) && echo "Your private key has been added to your clipboard"; }
+
+## Overrides ##
+alias tar='tar -v'
+
+## OSX Exclusive ##
+alias t="tee >(pbcopy)"
