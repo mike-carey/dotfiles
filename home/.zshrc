@@ -69,6 +69,9 @@ plugins=(
   vscode
   zsh-completions
 
+  # Go
+  golang
+
   # Python
   pyenv
   virtualenv
