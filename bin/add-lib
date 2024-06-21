@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+function add-lib() {
+  local repo="$1"
+  local name="${2:-}"
+
+  local default_name="${1##*/}"
+  default_name="${default_name%.git*}"
+
+  [ -n "$name" ] || name="$default_name"
+
+  git submodule add --name "$name" -- "$repo" "home/.lib/$name"
+}
+
+if [ "${BASH_SOURCE[0]}" = "$0" ]; then
+  set -u
+
+  add-lib "${@:-}"
+  exit $?
+fi

@@ -1,0 +1,12 @@
+[submodule "vundle"]
+	path = home/.lib/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "vim-monokai"]
+	path = home/.lib/vim-monokai
+	url = https://github.com/sickill/vim-monokai.git
+[submodule "zsh-completions"]
+	path = home/.lib/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
+[submodule "dracula-zsh"]
+	path = home/.lib/dracula-zsh
+	url = https://github.com/dracula/zsh.git
