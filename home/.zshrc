@@ -78,7 +78,6 @@ plugins=(
 
   # Terraform
   terraform
-  tfenv
 )
 # load in additional plugins for the local machine
 if [ -f ~/.zplugins ]; then
