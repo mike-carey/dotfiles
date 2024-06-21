@@ -1,0 +1,24 @@
+[user]
+	name = Mike Carey
+	email = 32496966+mike-carey@users.noreply.github.com
+[alias]
+	acp = "!f() { [ -n \"${@}\" ] && msg=\"$1\" && shift && git add . && git commit -m \"${msg}\" ${@} && git push ; }; f"
+	st = status
+	a = add
+	ap = add --patch
+	c = commit
+	ci = commit
+	cane = commit --amend --no-edit
+	co = checkout
+	rv = remote -v
+	rh = reset --hard
+	p = push
+	pf = push --force
+	po = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
+  pr = pull --rebase
+  pro = pull --rebase origin
+	root = rev-parse --show-toplevel
+	cleanup = !git remote prune origin && git branch --merged | grep -v '(master|main|development|dev)' | xargs git branch -d
+	b = branch
+[init]
+	defaultBranch = main

@@ -1,3 +1,9 @@
+# Local configurations
+/.localrc
+/.profile
+/.zplugins
+/.env
+
 ##
 # Global Ignore
 ##

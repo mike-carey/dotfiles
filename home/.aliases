@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+###
+# Aliases and functions to handle common operations.
+##
+
+# Docker
+
+alias dockerun='docker run --rm -it -v $(pwd):/srv -w /srv'
+
+# Git
+
+function gcp() { git commit "$@" && git push; }
+
+function gsc() {
+  local repo="$1"
+  local path="$2"
+
+  git clone --no-checkout "$repo"
+  git config core.sparseCheckout true
+  echo "$path/*"> .git/info/sparse-checkout
+  git checkout main
+}
+
+# Terraform
+
+alias tf='terraform'
+alias ti='terraform init'
+alias tp='terraform plan'
+alias ta='terraform apply'
+alias td='terraform destroy'
+alias to='terraform output'
+alias tim='terraform import'
+alias tfmt='terraform fmt'
+
+function tf-plan() {
+  local env="${1:-default}"
+  [ $# -lt 1 ] || shift
+
+  local args=("$@")
+
+  local tfvars="workspaces/$env.tfvars"
+  [ -f "$tfvars" ] && args+=(-var-file="$tfvars")
+
+  terraform workspace select "$env" && terraform plan -out="$env".plan "${args[@]}"
+}
