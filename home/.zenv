@@ -10,3 +10,7 @@ export EDITOR=vim
 
 # Go setup
 export GOPATH="$HOME/go"
+
+# The pyenv plugin will raise a warning saying that pyenv will not be loaded for non-interactive
+#   shells.  This should be fine as we are only going to be using interactive shells.
+export ZSH_PYENV_QUIET=true
