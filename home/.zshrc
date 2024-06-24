@@ -97,13 +97,5 @@ unsetopt HIST_VERIFY
 # Load in aliases
 [ -f ~/.aliases ] && . ~/.aliases
 
-# Load in environment variables
-[ -f ~/.env ] || cp ~/.env.example ~/.env
-sed '/^#.*/d' ~/.env |
-  while read -r _env; do
-    [ -n "$_env" ] || continue
-    export "$_env"
-  done
-
 # Load in local setup
 [ -f ~/.localrc ] && . ~/.localrc

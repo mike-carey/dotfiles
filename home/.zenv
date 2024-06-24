@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+# This script is loaded in first before any other ~/.z* files
+
+# Set the ssh key path
+export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
+
+# Set vim as the default editor
+export EDITOR=vim
+
+# Go setup
+export GOPATH="$HOME/go"
